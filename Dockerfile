@@ -2,7 +2,7 @@ FROM scratch
 MAINTAINER Olumide Ajiboye <olumideajiboye@yahoo.com>
 
 ADD centos-7-kinihun.tar.xz /
-RUN yum update && yum upgrade
+RUN yum update -y && yum upgrade -y
 RUN yum install -y wget vim curl
 
 # Downloading Java
