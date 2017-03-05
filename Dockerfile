@@ -3,7 +3,7 @@ MAINTAINER Olumide Ajiboye <olumideajiboye@yahoo.com>
 
 ADD centos-7-kinihun.tar.xz /
 RUN yum update && yum upgrade
-RUN yum -y install wget
+RUN yum install -y wget vim curl
 
 # Downloading Java
 RUN wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/$JAVA_VERSION-$BUILD_VERSION/jdk-$JAVA_VERSION-linux-x64.rpm" -O /tmp/jdk-8-linux-x64.rpm
